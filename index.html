@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Web App – Simple Interest Calculator</title>
+    </head>
+    <body>
+        <article>
+            <h1>Simple Interest Calculator</h1>
+            <table>
+                <tr>
+                    <td>
+                        Amount 
+                    </td>
+                    <td>
+                        <input  type="number"  id="principal">  <br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Rate
+                    </td>
+                    <td>
+                        <input min="1" max="20"  step="0.01"type="range"onchange="changeRate()" id="rate"> <label id="val_Range"></label>  <br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        No. of Years 
+
+                    </td>
+                    <td>
+                        <select name="year" id="years">
+                        </select>            
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick="compute()">Compute Interest</button>
+                    </td>
+                </tr>
+            </table>
+            
+            <div id="result"></div><br>
+            <footer>
+                © BISSAOUI Corporation 2022. All rights reserved.
+              </footer>
+        </article>
+    
+    </body>
+    <script src="script.js"></script>
+</html>
